@@ -157,7 +157,7 @@ input[type=number],
 }
 
 .calendar-internal-event-bc-cafe {
-  background-color: #52aadc !important;
+  background-color: #268ac3 !important;
 }
 
 .light-grey {
@@ -252,6 +252,14 @@ input[type=number],
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   vertical-align: top;
+}
+
+.bc-cafe{
+	border-left:6px #268ac3 solid;
+}
+
+.bc-club{
+	border-left:6px #e54545 solid;
 }
 
 

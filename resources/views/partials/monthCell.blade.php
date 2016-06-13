@@ -52,9 +52,9 @@
 						@elseif ($clubEvent->evnt_type == 7 OR $clubEvent->evnt_type == 8)
 							<div class="{{ $classString }} calendar-public-marketing">
 						@elseif ($clubEvent->getPlace->id == 1)
-							<div class="{{ $classString }} calendar-public-event-bc-club">
+							<div class="{{ $classString }} calendar-public-event-bc-club bc-club">
 						@elseif ($clubEvent->getPlace->id == 2)
-							<div class="{{ $classString }} calendar-public-event-bc-cafe">
+							<div class="{{ $classString }} calendar-public-event-bc-cafe bc-cafe">
 						@endif
 							@include("partials.event-marker", $clubEvent)
 						 	<a href="{{ URL::route('event.show', $clubEvent->id) }}"> 
@@ -75,9 +75,9 @@
 						@elseif ($clubEvent->evnt_type == 7 OR $clubEvent->evnt_type == 8)
 							<div class="{{ $classString }} calendar-internal-marketing">
 						@elseif ($clubEvent->getPlace->id == 1)
-							<div class="{{ $classString }} calendar-internal-event-bc-club">
+							<div class="{{ $classString }} calendar-internal-event-bc-club bc-club">
 						@elseif ($clubEvent->getPlace->id == 2)
-							<div class="{{ $classString }} calendar-internal-event-bc-cafe">
+							<div class="{{ $classString }} calendar-internal-event-bc-cafe bc-cafe">
 						@else
 							{{-- DEFAULT --}}
 							<div class="{{ $classString }} dark-grey">
@@ -90,9 +90,9 @@
 						@elseif ($clubEvent->evnt_type == 7 OR $clubEvent->evnt_type == 8)
 							<div class="{{ $classString }} calendar-public-marketing">
 						@elseif ($clubEvent->getPlace->id == 1)
-							<div class="{{ $classString }} calendar-public-event-bc-club">
+							<div class="{{ $classString }} calendar-public-event-bc-club bc-club">
 						@elseif ($clubEvent->getPlace->id == 2)
-							<div class="{{ $classString }} calendar-public-event-bc-cafe">
+							<div class="{{ $classString }} calendar-public-event-bc-cafe bc-cafe">
 						@else
 							{{-- DEFAULT --}}
 							<div class="{{ $classString }} dark-grey">
